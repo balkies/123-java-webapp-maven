@@ -28,7 +28,7 @@ stage("Results") {
 	stage("Deploy") {
     steps {
    
-	    deploy adapters: [tomcat8(credentialsId: '5f6586f0-ddf2-4684-99b9-17d638343caa', path: '', url: 'http://localhost:8080/')], contextPath: 'target', onFailure: false, war: '**/*.war'
+	    deploy adapters: [tomcat8(credentialsId: '5f6586f0-ddf2-4684-99b9-17d638343caa', path: '', url: 'http://localhost:8080/')], contextPath: null, war: '**/*.war'
 }
 }
 }
