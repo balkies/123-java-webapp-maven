@@ -4,7 +4,7 @@ agent { label 'master' }
 
 tools {
 	
-  maven "m3"
+  maven "M3"
   jdk "jdk8"
   
 
