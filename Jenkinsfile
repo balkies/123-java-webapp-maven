@@ -27,8 +27,7 @@ stage("Results") {
 }
 	stage("Deploy") {
     steps {
-    echo "this is test stage"
-	archiveArtifacts 'target/*.war'
+   
 	    deploy adapters: [tomcat8(credentialsId: '5f6586f0-ddf2-4684-99b9-17d638343caa', path: '', url: 'http://localhost:8080/')], contextPath: null, onFailure: false, war: 'balk.webapp.WAR'
 }
 }
