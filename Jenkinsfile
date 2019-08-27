@@ -22,7 +22,7 @@ stage("Cloning from git") {
 stage("Build using maven") {
     steps {
     echo "am building using maven"
-	bat(/"maven\bin\mvn" -Dmaven.test.failure.ignore clean package/)
+	bat(/"%maven%\bin\mvn" -Dmaven.test.failure.ignore clean package/)
     }
 }
 
