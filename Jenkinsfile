@@ -21,11 +21,6 @@ stage("Results") {
     steps{
     echo "this is test stage"
     }
-
-
-
-
-
-
+}
 }
 }
