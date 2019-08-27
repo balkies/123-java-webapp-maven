@@ -4,7 +4,7 @@ agent { label 'master' }
 
 tools {
 	
-  maven "M2"
+  maven "maven"
   jdk "jdk8"
   
 
@@ -22,7 +22,7 @@ stage("Cloning from git") {
 stage("Build using maven") {
     steps {
     echo "am building using maven"
-	bat(/"%M2%\bin\mvn" -Dmaven.test.failure.ignore clean package/)
+	bat(/"%maven%\bin\mvn" -Dmaven.test.failure.ignore clean package/)
     }
 }
 
