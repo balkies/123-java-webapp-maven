@@ -16,6 +16,6 @@
     </dependency>
   </dependencies>
   <build>
-    <finalName>balk.webapp</finalName>
+    <finalName>balk.webapp1</finalName>
   </build>
 </project>
