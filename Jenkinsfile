@@ -1,6 +1,6 @@
 pipeline {
 
-agent { label 'master' }
+agent { label 'buildagent1' }
 
 tools {
 	
