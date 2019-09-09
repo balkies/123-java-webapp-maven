@@ -15,7 +15,7 @@ stage("Build using maven") {
     steps {
     echo "am building using maven"
 	//bat(/"%M2_HOME%\bin\mvn" -Dmaven.test.failure.ignore clean package/)
-        sh '"$MVN_HOME/bin/mvn" -Dmaven.test.failure.ignore clean package'
+        sh '"usr/bin/mvn" -Dmaven.test.failure.ignore clean package'
     }
 }
 
