@@ -14,7 +14,7 @@ stages {
 stage("Build using maven") {
     steps {
     echo "am building using maven"
-        sh '"usr/bin/mvn" -Dmaven.test.failure.ignore clean package'
+        sh '"/usr/bin/mvn" -Dmaven.test.failure.ignore clean package'
     }
 }
 
