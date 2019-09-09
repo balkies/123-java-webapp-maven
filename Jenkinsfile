@@ -27,10 +27,9 @@ stage("Results") {
 }
 	stage("Deploy") {
     steps {
-    echo "this is test stage"
+    echo "this is Deploy Stage"
     //deploy adapters: [tomcat8(credentialsId: '5f6586f0-ddf2-4684-99b9-17d638343caa', path: '', url: 'http://localhost:8080/')], contextPath: null, war: '**/*.war'
-    deploy adapters: [tomcat8(credentialsId: 'eed4f542-43c0-47cb-939f-ae67a18d694e', path: '', url: 'http://192.168.222.129:8080/')], contextPath: null, war: '**/*.war'
-}
+    deploy adapters: [tomcat8(credentialsId: '5f6586f0-ddf2-4684-99b9-17d638343caa', path: '', url: 'http://192.168.222.129:8080/')], contextPath: null, war: '**/*.war'
 }
 }
 }
